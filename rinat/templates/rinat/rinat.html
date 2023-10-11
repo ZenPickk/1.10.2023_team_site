@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'rinat/css/rinat.css' %}">
+    <title>Rinat</title>
+</head>
+<body>
+    <header>
+        
+        <h1>Рінат Ткаченко</h1>
+        
+        <button id="main_btn" name = "to_main">
+            <a href="{% url 'main'%}">На головну сторінку</a>
+        </button>
+
+
+    </header>
+    <br><br><br><br>
+<!-- ------------------------------------------------------------ -->
+
+    <div class="theme">
+        <img class = "img" src="{% static 'rinat/images/books.png'%}",alt = "Error",width = 300px; height= 300px;>
+        <hr>
+        <div class="paragraf-1">
+            <h2>Освіта</h2>
+            <div class="text">
+                <p>8 класс в школі</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="theme">
+        <div class="paragraf-2">
+            <h2>Досягнення в програмуванні</h2>
+
+            <div class="text">
+                <p>Вивчаю python вже 3 рік. Створював 4 проєкти та зараз створюю п'ятий.</p>
+            </div>
+
+        </div>
+        <img class = "img" src="{% static 'rinat/images/code.png'%}",alt = "Error", height = 280px>
+    </div>
+
+    <div class="theme">
+        <img class = "img" src="{% static 'rinat/images/hobby.jpg'%}",alt = "Error",width = 280px; height= 280px;>
+        <hr>
+        <div class="paragraf-1">
+            <h2>Хоббі</h2>
+            <div class="text">
+                <p>Комп'ютерні ігри</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="theme">
+        <div class="paragraf-2">
+            <h2>Дозвілля</h2>
+
+            <div class="text">
+                <p>У вільний час люблю витрачати своє життя та вже продав душу грі War Thunder.</p>
+            </div>
+
+        </div>
+        <img class = "img" src="{% static 'rinat/images/war_thunder.jpg'%}",alt = "Error", height = 280px>
+    </div>
+</body>
+</html>

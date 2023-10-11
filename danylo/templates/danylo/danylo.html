@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'danylo/css/danylo.css' %}">
+    <title>Danylo</title>
+</head>
+<body>
+    <header>
+        
+        <h1>Данило Колосов</h1>
+        
+        <button id="main_btn" name = "to_main">
+            <a href="{% url 'main'%}">На головну сторінку</a>
+        </button>
+
+
+    </header>
+    <br><br><br><br>
+<!-- ------------------------------------------------------------ -->
+
+    <div class="theme">
+        <img class = "img" src="{% static 'danylo/images/books.png'%}",alt = "Error",width = 300px; height= 300px;>
+        <hr>
+        <div class="paragraf-1">
+            <h2>Освіта</h2>
+            <div class="text">
+                <p>Навчається у технічному ліцеї при ДІЇТІ у місті Дніпро</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="theme">
+        <div class="paragraf-2">
+            <h2>Досягнення в програмуванні</h2>
+
+            <div class="text">
+                <p>Закінчив 2 роки вивчення мови програмування Python, раніше вивчав Ruby, створив декілька проєктів з командою однокурсників а саме: калькулятор (віконний додаток), голосовий помічник, гра платформер, тощо.</p>
+            </div>
+
+        </div>
+        <img class = "img" src="{% static 'danylo/images/code.png'%}",alt = "Error", height = 280px>
+    </div>
+
+    <div class="theme">
+        <img class = "img" src="{% static 'danylo/images/hobby.jpg'%}",alt = "Error",width = 280px; height= 280px;>
+        <hr>
+        <div class="paragraf-1">
+            <h2>Хоббі</h2>
+            <div class="text">
+                <p>Програмування</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="theme">
+        <div class="paragraf-2">
+            <h2>Дозвілля</h2>
+
+            <div class="text">
+                <p>Граю в ігри, роблю домашнє завдання, пізнаю щось нове</p>
+            </div>
+
+        </div>
+        <img class = "img" src="{% static 'danylo/images/free_time.png'%}",alt = "Error", height = 280px>
+    </div>
+</body>
+</html>

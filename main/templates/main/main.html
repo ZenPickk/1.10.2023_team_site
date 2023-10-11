@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<body>
+    <h1>Team 8</h1>
+    <div class="humans">
+        <div>
+            <p class="names", id = "bogdan">Богдан</p>
+            <br>
+            <a href="{% url 'bogdan'%}">
+                <img src="{% static 'main/images/bogdan.jpg' %}" alt="">
+            </a>
+        </div>
+        <div>
+            <p class="names", id = "danylo">Данило</p>
+            <br>
+            <a href="{% url 'danylo'%}">
+                <img src="{% static 'main/images/danylo.jpg' %}" alt="">
+            </a>
+        </div>
+        <div>
+            <p class="names", id = "rinat">Рінат</p>
+            <br>
+            <a href="{% url 'rinat'%}">
+                <img src="{% static 'main/images/rinat.jpg' %}" alt="">
+            </a>
+        </div>
+        <div>
+            <p class="names", id = "yaroslav">Ярослав</p>
+            <br>
+            <a href="{% url 'yaroslav'%}">
+                <img src="{% static 'main/images/yaroslav.jpg' %}" alt="">
+            </a>            
+        </div>
+    </div>
+
+</body>
+</html>
